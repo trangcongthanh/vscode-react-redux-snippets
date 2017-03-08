@@ -16,7 +16,7 @@
     },
     "setState": {
         "prefix": "setState",
-        "body": "this.setState({\n\t${1:key}:${2:value}\n})",
+        "body": "this.setState({\n\t${1:key}: ${2:value}\n})",
         "description": "fn({})"
     },
     "props": {
