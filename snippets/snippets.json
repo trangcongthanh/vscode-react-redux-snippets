@@ -1,0 +1,107 @@
+{
+    "constructor": {
+        "prefix": "constructor",
+        "body": "constructor(props){\n\tsuper(props);\n\tthis.state = {};\n}",
+        "description": "fn()"
+    },
+    "bindingMethod": {
+        "prefix": "bindMethod",
+        "body": "this.${1:method} = this.${1:method}.bind(this)${2}",
+        "description": "Binding Method"
+    },
+    "state": {
+        "prefix": "state",
+        "body": "const { ${1:key} } = this.state",
+        "description": "Object"
+    },
+    "setState": {
+        "prefix": "setState",
+        "body": "this.setState({\n\t${1:key}:${2:value}\n})",
+        "description": "fn({})"
+    },
+    "props": {
+        "prefix": "props",
+        "body": "const { ${1:key} } = this.props",
+        "description": "Object"
+    },
+    "componentDidMount": {
+        "prefix": "cdm",
+        "body": "componentDidMount() {\n\t${1}\n}",
+        "description": "fn()"
+    },
+    "componentDidUpdate": {
+        "prefix": "cdu",
+        "body": "componentDidUpdate(prevProps, prevState) {\n\t${1}\n}",
+        "description": "fn(pp,ps)"
+    },
+    "componentWillMount": {
+        "prefix": "cwm",
+        "body": "componentWillMount() {\n\t${1}\n}",
+        "description": "fn()"
+    },
+    "componentWillUnmount": {
+        "prefix": "cwum",
+        "body": "componentWillUnmount() {\n\t${1}\n}",
+        "description": "fn()"
+    },
+    "componentWillReceiveProps": {
+        "prefix": "cwrp",
+        "body": "componentWillReceiveProps(nextProps) {\n\t${1}\n}",
+        "description": "fn(np)"
+    },
+    "componentWillUpdate": {
+        "prefix": "cwu",
+        "body": "componentWillUpdate(nextProps, nextState) {\n\t${1}\n}",
+        "description": "fn(np, ns)"
+    },
+    "shouldComponentUpdate": {
+        "prefix": "scu",
+        "body": "shouldComponentUpdate(nextProps, nextState) {\n\t${1}\n}",
+        "description": "fn(np,ns)"
+    },
+    "propTypes": {
+        "prefix": "pt",
+        "body": "${1:props}: PropTypes.${2:types},",
+        "description": "Object"
+    },
+    "mapStateToProps": {
+        "prefix": "mstp",
+        "body": "const mapStateToProps = state => {\n\tconst { ${1:key} } = state\n\treturn { ${1:key}, }\n}",
+        "description": "fn()"
+    },
+    "mapDispatchToProps": {
+        "prefix": "mdtp",
+        "body": "const mapDispatchToProps = dispatch => ({\n\t${1:key}: (${2:params}) => dispatch(${3:func}(${2:params}),\n})",
+        "description": "fn()"
+    },
+    "connect": {
+        "prefix": "connect",
+        "body": "export default connect(mapStateToProps, mapDispatchToProps)(${1:Class})",
+        "description": "fn()"
+    },
+    "statelessComponent": {
+        "prefix": "slc",
+        "body": "import React, { PropTypes } from 'react'\nimport style from './style.css'\n\nconst propTypes = {\n\tpropTypes\n}\n\nconst defaultProps = {\n\tdefaultProps\n}\n\nconst ${1:Class} = props => (\n\t<div>\n\t\t${2}\n\t</div>\n)\n\n${1:Class}.propTypes = propTypes\n\n${1:Class}.defaultProps = defaultProps\n\nexport default ${1:Class}\n",
+        "description": "Stateless Component"
+    },
+    "statefullComponent": {
+        "prefix": "sfc",
+        "body": "import React, { Component, PropTypes } from 'react'\nimport style from './style.css'\n\nconst propTypes = {\n\tpropTypes\n}\n\nconst defaultProps = {\n\tdefaultProps\n}\n\nclass ${1:Class} extends Component {\n\tconstructor(props) {\n\t\tsuper(props)\n\t\tthis.state = {\n\t\t}\n\t}\n\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h1>\n\t\t\t</div>\n\t\t)\n\t}\n}\n\n${1:Class}.propTypes = propTypes\n\n${1:Class}.defaultProps = defaultProps\n\nexport default ${1:Class}\n",
+        "description": "Statefull component"
+    },
+    "action": {
+        "prefix": "action",
+        "body": "export const ${1:func} = (${2:params}) =>\n\t(dispatch, getState) => {\n\t\t${3:content}\n\t}\n",
+        "description": "Redux action"
+    },
+    "reducer": {
+        "prefix": "reducer",
+        "body": "const initState = {\n\t${1:key}: ${2:value},\n}\n\nconst ${3:reducer} = (state = initState, action) => {\n\tswitch (action.type) {\n\t\tdefault:\n\t\t\treturn state\n\t}\n}\n\nexport default ${3:reducer}\n",
+        "description": "Redux reducer"
+    },
+    "actionType": {
+        "prefix": "actionType",
+        "body": "case ${1:TYPE}:\n\treturn Object.assign({}, state, {\n\t\t${2:key}: action.payload,\n\t})",
+        "description": "Redux reducer"
+    }
+}
