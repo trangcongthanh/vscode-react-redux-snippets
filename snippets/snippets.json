@@ -71,7 +71,7 @@
     },
     "mapDispatchToProps": {
         "prefix": "mdtp",
-        "body": "const mapDispatchToProps = dispatch => ({\n\t${1:key}: (${2:params}) => dispatch(${3:func}(${2:params}),\n})",
+        "body": "const mapDispatchToProps = dispatch => ({\n\t${1:key}: (${2:params}) => dispatch(${3:func}(${2:params})),\n})",
         "description": "fn()"
     },
     "connect": {
