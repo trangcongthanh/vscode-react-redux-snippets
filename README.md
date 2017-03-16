@@ -11,6 +11,7 @@ Would you like me to add a snippet or contribute? [Head over to the repo](https:
 | React |
 | [Statefull Component](#statefullComponent) | `sfc` |
 | [Stateless Component](#statelessComponent) | `slc` |
+| [Redux Component](#reduxComponent) | `reduxComponent` |
 | [componentWillMount](#componentWillMount) | `cwm` |
 | [componentDidMount](#componentDidMount) | `cdm` |
 | [componentWillReceiveProps](#componentWillReceiveProps) | `cwrp` |
@@ -67,7 +68,49 @@ Class.propTypes = propTypes
 Class.defaultProps = defaultProps
 
 export default Class
+```
 
+### Redux Component <a name="reduxComponent"></a>
+```
+import React, { Component, PropTypes } from 'react'
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
+import style from './style.css'
+
+const propTypes = {
+}
+
+const defaultProps = {
+}
+
+class Class extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+    }
+  }
+
+  render() {
+    return (
+      <div>
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h1>
+      </div>
+    )
+  }
+}
+
+Class.propTypes = propTypes
+
+Class.defaultProps = defaultProps
+
+const mapStateToProps = state => {
+  const { state } = state
+  return { state }
+}
+
+const mapDispatchToProps = dispatch => ({ actions }, dispatch)
+
+export default connect(mapStateToProps, mapDispatchToProps)(Class)
 ```
 
 ### Stateless Component <a name="statelessComponent"></a>
@@ -158,8 +201,8 @@ const { key } = this.state
 
 ### setState <a name="setState"></a>
 ```
-this.setState({
-  key:value
+this.setState((prevState, props) => {
+  key: value,
 })
 ```
 

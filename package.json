@@ -6,7 +6,7 @@
         "type": "git",
         "url": "https://github.com/trangcongthanh/vscode-react-redux-snippets"
     },
-    "version": "0.1.2",
+    "version": "0.1.4",
     "icon": "resources/logo.png",
     "publisher": "thanhtrang",
     "engines": {
