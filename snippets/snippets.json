@@ -71,8 +71,8 @@
     },
     "mapDispatchToProps": {
         "prefix": "mdtp",
-        // "body": "const mapDispatchToProps = dispatch => ({\n\t${1:key}: (${2:params}) => dispatch(${3:func}(${2:params})),\n})",
-        "body": "const mapDispatchToProps = dispatch => bindActionCreators({ ${1:actions} }, dispatch)",
+        "body": "const mapDispatchToProps = dispatch => ({\n\t${1:key}: (${2:params}) => dispatch(${3:func}(${2:params})),\n})",
+        // "body": "const mapDispatchToProps = dispatch => bindActionCreators({ ${1:actions} }, dispatch)",
         "description": "fn()"
     },
     "connect": {
@@ -82,17 +82,17 @@
     },
     "statelessComponent": {
         "prefix": "slc",
-        "body": "import React, { PropTypes } from 'react'\nimport style from './style.css'\n\nconst propTypes = {\n\tpropTypes\n}\n\nconst defaultProps = {\n\tdefaultProps\n}\n\nconst ${1:Class} = props => (\n\t<div>\n\t\t${2}\n\t</div>\n)\n\n${1:Class}.propTypes = propTypes\n\n${1:Class}.defaultProps = defaultProps\n\nexport default ${1:Class}\n",
+        "body": "import React, { PropTypes } from 'react'\nimport style from './style.css'\n\nconst propTypes = {}\n\nconst defaultProps = {}\n\nconst ${1:Class} = props => (\n\t<div>\n\t\t${2}\n\t</div>\n)\n\n${1:Class}.propTypes = propTypes\n\n${1:Class}.defaultProps = defaultProps\n\nexport default ${1:Class}\n",
         "description": "Stateless Component"
     },
     "statefullComponent": {
         "prefix": "sfc",
-        "body": "import React, { Component, PropTypes } from 'react'\nimport style from './style.css'\n\nconst propTypes = {\n\tpropTypes\n}\n\nconst defaultProps = {\n\tdefaultProps\n}\n\nclass ${1:Class} extends Component {\n\tconstructor(props) {\n\t\tsuper(props)\n\t\tthis.state = {\n\t\t}\n\t}\n\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h1>\n\t\t\t</div>\n\t\t)\n\t}\n}\n\n${1:Class}.propTypes = propTypes\n\n${1:Class}.defaultProps = defaultProps\n\nexport default ${1:Class}\n",
+        "body": "import React, { Component, PropTypes } from 'react'\nimport style from './style.css'\n\nconst propTypes = {}\n\nconst defaultProps = {}\n\nclass ${1:Class} extends Component {\n\tconstructor(props) {\n\t\tsuper(props)\n\t\tthis.state = {\n\t\t}\n\t}\n\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h1>\n\t\t\t</div>\n\t\t)\n\t}\n}\n\n${1:Class}.propTypes = propTypes\n\n${1:Class}.defaultProps = defaultProps\n\nexport default ${1:Class}\n",
         "description": "Statefull component"
     },
     "reduxComponent": {
         "prefix": "reduxcomponent",
-        "body": "import React, { Component, PropTypes } from 'react'\nimport { bindActionCreators } from 'redux'\nimport { connect } from 'react-redux'\nimport style from './style.css'\n\nconst propTypes = {\n}\n\nconst defaultProps = {\n}\n\nclass ${1:Class} extends Component {\n\tconstructor(props) {\n\t\tsuper(props)\n\t\tthis.state = {\n\t\t}\n\t}\n\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h1>\n\t\t\t</div>\n\t\t)\n\t}\n}\n\n${1:Class}.propTypes = propTypes\n\n${1:Class}.defaultProps = defaultProps\n\nconst mapStateToProps = state => {\n\tconst { state } = state\n\treturn { state }\n}\n\nconst mapDispatchToProps = dispatch => ({ actions }, dispatch)\n\nexport default connect(mapStateToProps, mapDispatchToProps)(${1:Class})\n",
+        "body": "import React, { Component, PropTypes } from 'react'\nimport { bindActionCreators } from 'redux'\nimport { connect } from 'react-redux'\nimport style from './style.css'\n\nconst propTypes = {}\n\nconst defaultProps = {}\n\nclass ${1:Class} extends Component {\n\tconstructor(props) {\n\t\tsuper(props)\n\t\tthis.state = {\n\t\t}\n\t}\n\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h1>\n\t\t\t</div>\n\t\t)\n\t}\n}\n\n${1:Class}.propTypes = propTypes\n\n${1:Class}.defaultProps = defaultProps\n\nconst mapStateToProps = state => {\n\tconst { state } = state\n\treturn { state }\n}\n\nconst mapDispatchToProps = dispatch => ({ actions }, dispatch)\n\nexport default connect(mapStateToProps, mapDispatchToProps)(${1:Class})\n",
         "description": "Redux Statefull component"
     },
     "action": {
