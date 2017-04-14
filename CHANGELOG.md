@@ -3,6 +3,9 @@ All notable changes to the "vscode-react-redux-snippets" extension will be docum
 
 ## [Unreleased]
 
+## [0.2.2] - 2017-04-14
+Fix typo
+
 ## [0.2.1] - 2017-04-14
 Add import snippet for suggestion
 Using bindActionCreators for mapDispatchToProps

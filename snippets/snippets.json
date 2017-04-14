@@ -1,7 +1,7 @@
 {
     "import": {
-        "prefix": "import",
-        "body": "import { ${2} } from '${1}'",
+        "prefix": "importLib",
+        "body": "import ${2} from '${1:library}'",
         "description": "Import library support suggestion"
     },
     "constructor": {

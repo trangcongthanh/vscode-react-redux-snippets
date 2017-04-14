@@ -32,6 +32,8 @@ Would you like me to add a snippet or contribute? [Head over to the repo](https:
 | [reducer](#reducer) | `reducer` |
 | [action](#action) | `action` |
 | [actionType](#actionType) | `actionType` |
+| Other |
+| [Import Library] (#importLib) | `importLib` |
 
 
 ### Statefull Component <a name="statefullComponent"></a>
@@ -267,4 +269,7 @@ case TYPE:
     key: action.payload,
   })
 ```
+
+### importLib <a name="importLib"></a>
+Write Library name first for suggestion
 
