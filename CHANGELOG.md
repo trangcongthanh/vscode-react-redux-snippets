@@ -3,6 +3,10 @@ All notable changes to the "vscode-react-redux-snippets" extension will be docum
 
 ## [Unreleased]
 
+## [0.2.1] - 2017-04-14
+Add import snippet for suggestion
+Using bindActionCreators for mapDispatchToProps
+
 ## [0.2.0] - 2017-04-10
 Default propTypes and defaultProps now is null Object
 
