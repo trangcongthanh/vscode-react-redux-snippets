@@ -35,6 +35,20 @@ Would you like me to add a snippet or contribute? [Head over to the repo](https:
 | Other |
 | [Import Library] (#importLib) | `importLib` |
 
+## Semicolon?
+In my team, we don't use semicolon in our code. If you want to have semicolon in your code, just add semicolon after prefix.
+Example:
+```
+mstp;
+```
+It'll be:
+```
+const mapStateToProps = state => {
+  const { key } = state;
+  return { key };
+}
+```
+
 
 ### Statefull Component <a name="statefullComponent"></a>
 ```
@@ -222,7 +236,7 @@ props: PropTypes.types,
 ```
 const mapStateToProps = state => {
   const { key } = state
-  return { key, }
+  return { key }
 }
 ```
 

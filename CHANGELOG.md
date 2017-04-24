@@ -3,6 +3,10 @@ All notable changes to the "vscode-react-redux-snippets" extension will be docum
 
 ## [Unreleased]
 
+## [0.3.0] - 2017-04-24
+Add support semicolon
+Fix typo
+
 ## [0.2.2] - 2017-04-14
 Fix typo
 
