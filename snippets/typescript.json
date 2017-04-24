@@ -1,0 +1,7 @@
+{
+  "import": {
+        "prefix": "importLib",
+        "body": "import ${2} from '${1:library}'",
+        "description": "Import library support suggestion"
+    }
+}
