@@ -1,6 +1,6 @@
 {
-    "constructor": {
-        "prefix": "constructor",
+    "constructor;": {
+        "prefix": "constructor;",
         "body": "constructor(props) {\n\tsuper(props);\n\tthis.state = {};\n}",
         "description": "fn()"
     },
@@ -28,41 +28,6 @@
         "prefix": "props;",
         "body": "const { ${1:key} } = this.props;",
         "description": "Object"
-    },
-    "componentDidMount": {
-        "prefix": "cdm",
-        "body": "componentDidMount() {\n\t${1}\n}",
-        "description": "fn()"
-    },
-    "componentDidUpdate": {
-        "prefix": "cdu",
-        "body": "componentDidUpdate(prevProps, prevState) {\n\t${1}\n}",
-        "description": "fn(pp,ps)"
-    },
-    "componentWillMount": {
-        "prefix": "cwm",
-        "body": "componentWillMount() {\n\t${1}\n}",
-        "description": "fn()"
-    },
-    "componentWillUnmount": {
-        "prefix": "cwum",
-        "body": "componentWillUnmount() {\n\t${1}\n}",
-        "description": "fn()"
-    },
-    "componentWillReceiveProps": {
-        "prefix": "cwrp",
-        "body": "componentWillReceiveProps(nextProps) {\n\t${1}\n}",
-        "description": "fn(np)"
-    },
-    "componentWillUpdate": {
-        "prefix": "cwu",
-        "body": "componentWillUpdate(nextProps, nextState) {\n\t${1}\n}",
-        "description": "fn(np, ns)"
-    },
-    "shouldComponentUpdate": {
-        "prefix": "scu",
-        "body": "shouldComponentUpdate(nextProps, nextState) {\n\t${1}\n}",
-        "description": "fn(np,ns)"
     },
     "mapStateToProps;": {
         "prefix": "mstp;",
