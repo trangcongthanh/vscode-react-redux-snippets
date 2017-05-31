@@ -46,17 +46,17 @@
     },
     "statelessComponent;": {
         "prefix": "slc;",
-        "body": "import React, { PropTypes } from 'react';\nimport style from './style.css';\n\nconst propTypes = {};\n\nconst defaultProps = {};\n\nconst ${1:Class} = props => (\n\t<div>\n\t\t${2}\n\t</div>\n);\n\n${1:Class}.propTypes = propTypes;\n\n${1:Class}.defaultProps = defaultProps;\n\nexport default ${1:Class};\n",
+        "body": "import React from 'react';\nimport PropTypes from 'prop-types'\nimport styles from './style.css';\n\nconst propTypes = {};\n\nconst defaultProps = {};\n\nconst ${1:Class} = props => (\n\t<div>\n\t\t${2}\n\t</div>\n);\n\n${1:Class}.propTypes = propTypes;\n\n${1:Class}.defaultProps = defaultProps;\n\nexport default ${1:Class};\n",
         "description": "Stateless Component"
     },
     "statefullComponent": {
         "prefix": "sfc;",
-        "body": "import React, { Component, PropTypes } from 'react';\nimport style from './style.css';\n\nconst propTypes = {};\n\nconst defaultProps = {};\n\nclass ${1:Class} extends Component {\n\tconstructor(props) {\n\t\tsuper(props);\n\t\tthis.state = {};\n\t}\n\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h1>\n\t\t\t</div>\n\t\t);\n\t}\n}\n\n${1:Class}.propTypes = propTypes;\n\n${1:Class}.defaultProps = defaultProps;\n\nexport default ${1:Class};\n",
+        "body": "import React, { Component } from 'react';\nimport PropTypes from 'prop-types';\nimport styles from './style.css';\n\nconst propTypes = {};\n\nconst defaultProps = {};\n\nclass ${1:Class} extends Component {\n\tconstructor(props) {\n\t\tsuper(props);\n\t\tthis.state = {};\n\t}\n\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h1>\n\t\t\t</div>\n\t\t);\n\t}\n}\n\n${1:Class}.propTypes = propTypes;\n\n${1:Class}.defaultProps = defaultProps;\n\nexport default ${1:Class};\n",
         "description": "Statefull component"
     },
     "reduxComponent": {
         "prefix": "reduxcomponent;",
-        "body": "import React, { Component, PropTypes } from 'react';\nimport { bindActionCreators } from 'redux';\nimport { connect } from 'react-redux';\nimport style from './style.css';\n\nconst propTypes = {};\n\nconst defaultProps = {};\n\nclass ${1:Class} extends Component {\n\tconstructor(props) {\n\t\tsuper(props);\n\t\tthis.state = {};\n\t}\n\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h1>\n\t\t\t</div>\n\t\t);\n\t}\n}\n\n${1:Class}.propTypes = propTypes;\n\n${1:Class}.defaultProps = defaultProps;\n\nconst mapStateToProps = state => {\n\tconst { ${2:key} } = state;\n\treturn { ${2:key} };\n}\n\nconst mapDispatchToProps = dispatch => ({ actions }, dispatch);\n\nexport default connect(mapStateToProps, mapDispatchToProps)(${1:Class});\n",
+        "body": "import React, { Component } from 'react';\nimport PropTypes from 'prop-types';\nimport { bindActionCreators } from 'redux';\nimport { connect } from 'react-redux';\nimport styles from './style.css';\n\nconst propTypes = {};\n\nconst defaultProps = {};\n\nclass ${1:Class} extends Component {\n\tconstructor(props) {\n\t\tsuper(props);\n\t\tthis.state = {};\n\t}\n\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h1>\n\t\t\t</div>\n\t\t);\n\t}\n}\n\n${1:Class}.propTypes = propTypes;\n\n${1:Class}.defaultProps = defaultProps;\n\nconst mapStateToProps = state => {\n\tconst { ${2:key} } = state;\n\treturn { ${2:key} };\n}\n\nconst mapDispatchToProps = dispatch => ({ actions }, dispatch);\n\nexport default connect(mapStateToProps, mapDispatchToProps)(${1:Class});\n",
         "description": "Redux Statefull component"
     },
     "action;": {

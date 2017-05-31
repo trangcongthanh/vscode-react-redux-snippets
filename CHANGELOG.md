@@ -3,6 +3,9 @@ All notable changes to the "vscode-react-redux-snippets" extension will be docum
 
 ## [Unreleased]
 
+## [0.3.2] - 2017-05-31
+Using prop-types lib because PropTypes was deprecated after React 15.5
+
 ## [0.3.1] - 2017-04-25
 Remove duplicated snippets
 
